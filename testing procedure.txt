@@ -1,0 +1,9 @@
+1. Import Libraries
+2. Load model weights
+3. Load the cell lines observation data in a dataframe
+4. Group the expression data by their mean responses
+5. Get the essential gene list for analysis with respect to the cell lines of interest
+6. Normalize the expression data
+7. Calculate the kernel feature from the normalized expression data, and the essential gene list
+8. Now that we have the kernel, make the predictions from the model and kernel to get the relative response of new genes.
+9. This response can be used to predict which drug composition is suitable for cancer control in a cell line

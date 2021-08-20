@@ -1,0 +1,14 @@
+1. Impoer libraries
+2. Read cell line info(specific cell lines like ovarian for instance)
+3. Set a drug response for ground truth
+4. Get the drug info from GDSC database
+5. Get the observed drug response data from GDSC database
+6. If there are multiple probes ewith a gene, take the mean
+7. Normalize the gene expression by computing fold changes compared to the average value across cell-lines
+8. Get essential gene list
+9. Create a sample from expression and response data
+10. Create a expression and response matrix
+11. Calculate a kernel matrix with gene expression profiles, list of essential genes
+12. Split the data for X train (kernel cell line sample list, cell line sample list) and Y train(cell line sample list)
+13. Select a model for training: we will use the (CaDRReS+ no bp) cadrres-wo-sample-bias model
+14. Train the model for 100000 steps and save the weights
